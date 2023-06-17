@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="counter-box">
+        <div class="col-1">
+            <a href="/" class="btn">Click</a>
+        </div>
+        <div class="col-2">
+            <h1 class="counter">Counter</h1>
+            <p class="time">{{session['count']}} time(s)</p>
+        </div>
+        <div class="col-3">
+            <a href="/reset"  button class="btn">Reset</a>
+        </div>
+    </div>
+</body>
+</html>
